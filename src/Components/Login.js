@@ -1,9 +1,11 @@
-import React,{useState} from "react";
-import axios from "axios";
+import React,{useState,useContext} from "react";
+import axios from "axios"; 
+import UserContext from "../Context/UserContext";
 
-const Login=({setToken})=>{
+const Login=()=>{
     const[user,setUser]=useState({email:"",password:""})
     const[message,setMessage]=useState("")
+    const {setToken}=useContext(UserContext);
 
     function updateUser(e){
         let key=e.target.name

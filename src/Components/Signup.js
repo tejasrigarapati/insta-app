@@ -1,9 +1,11 @@
-import React,{useState} from "react";
+import React,{useState,useContext} from "react";
 import axios from "axios";
+import UserContext from "../Context/UserContext";
 
-const Signup=({setToken})=>{
+const Signup=()=>{
     const[user,setUser]=useState({name:"",email:"",password:"",confirmPassword:""});
     const[message,setMessage]=useState("")
+    const {setToken}=useContext(UserContext);
 
 
     function updateUser(e){
@@ -38,8 +40,9 @@ const Signup=({setToken})=>{
         setMessage(response.data.message)
         console.log("token",response.data.data.token)
         setToken(response.data.data.token)
-
+         
         setUser({name:"",email:"",password:"",confirmPassword:""})
+
 }
     catch(error){
         console.log("Error",error.response.data.message)
