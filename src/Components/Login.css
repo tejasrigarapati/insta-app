@@ -1,0 +1,64 @@
+/* Style for the login container */
+.login-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/gradient-instagram-social-media-background_23-2150934914.jpg?w=740&t=st=1713201107~exp=1713201707~hmac=5e895a8c450181e27830f8034b92ae86a44019289b26cbd0f4956bf15014fe99'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style for the cover page */
+  .cover-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  }
+  
+  /* Style for the login form */
+  .login-form {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* White background for the form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+  }
+  
+  .login-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form h2 {
+    font-size: 18px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
